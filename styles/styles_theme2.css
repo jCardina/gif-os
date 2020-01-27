@@ -1,0 +1,214 @@
+body.dark {
+	background-color: #110038;
+}
+
+.topBar.dark {
+	background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+
+/*-----------------NAVBAR AND MAIN BUTTONS-----------------*/
+
+button.secondary.dark {
+	background-color: #110038;
+	border-color: #CCCCCC;
+	box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+
+button.secondary.dark:hover {
+	outline: 1px dotted #FFFFFF;
+	background-color: #110038;
+}
+
+.navButtons.dark {
+	color: #FFFFFF;
+	background-color: #EE3EFE;
+	box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.navButtons.dark:hover, #button2.dark:hover span {
+	background-color: #CE36DB;
+}
+
+.arrow.dark {
+	background-image: url(../images/dropdownWhite.svg);
+}
+
+.dropdown.dark {
+	background-color: #B4B4B4;
+	box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+
+#themeToggle2.dark {
+	color: #FFFFFF;
+	background-color: #2E32FB;
+	background-clip: padding-box;
+	border: 1px solid rgba(51,53,143,0.20);
+	box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#themeToggle2.dark span {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#themeToggle1.dark {
+	color: #110038;
+	background-color: #CCCCCC;
+	border: 1px solid #808080;
+	box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.navLink.dark:hover {
+	border-color: #FFFFFF;
+}
+
+.navLink.dark:active, #guifosPage.navLink.dark {
+	border-color: transparent;
+}
+
+.navLink.dark:active a, #guifosPage.navLink.dark a {
+	color: #FFFFFF80;
+}
+
+.navLink.dark:hover a span {
+	border-color: #FFFFFF;
+}
+
+.navLink.dark:active a span, #guifosPage.navLink.dark a span {
+	border-color: #FFFFFF80;
+}
+
+.navLink.dark a {
+	color: #FFFFFF;
+}
+
+.navLink.dark a span {
+	border-color: transparent;
+}
+
+/*-----------------SEARCH BAR-----------------*/
+
+
+.searchContainer.dark {
+	background-color: #B4B4B4;
+	box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark.searchButton:disabled {
+	background-color: #B4B4B4;
+	color: #8F8F8F;
+	border: 1px solid #808080;
+	box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.searchButton.dark {
+	color: #FFFFFF;
+	background-color: #EE3EFE;
+	border: 1px solid #110038;
+	box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.searchButton.dark:enabled:hover {
+	background-color: #CE36DB;
+}
+
+.searchButton.dark:focus {
+	background-color: #CE36DB;
+}
+
+.searchButton.dark:disabled .magGlass.dark {
+	background-image: url("../images/Combined_Shape.svg");
+}
+
+.magGlass.dark {
+	background-image: url("../images/lupa_light.svg");
+}
+
+#suggestions.dark {
+	background-color: #B4B4B4;
+	box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.searchesHist.dark {
+	background-color: #CCCCCC;
+	border: 1px solid #808080;
+	box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.btnHover.dark, .searchesHist.dark:focus {
+	background-color: #B4B4B4;
+}
+
+.gifContainer.dark:hover img{
+	background-color: #B4B4B4;
+	box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.relatedBtn.dark {
+	background-color: #2E32FB;
+	border: 1px solid #4C2F99;
+	box-shadow: inset -1px -1px 0 0 #2124B3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.relatedBtn.dark:hover {
+	background-color: #2629CC;
+}
+
+/*-----------------RECOMMENDED-----------------*/
+
+
+.sectionTitle.dark {
+	border: 1px solid #2E32FB;
+}
+
+.recContainer.dark {
+	background-color: #B4B4B4;
+	box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.recContainer.dark .more {
+	background-color: #2E32FB;
+	border: 1px solid #4C2F99;
+	box-shadow: inset -1px -1px 0 0 #2124B3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.recContainer.dark .more:hover {
+	background-color: #2629CC;
+}
+
+
+/*-----------------UPLOAD-----------------*/
+
+.box.dark {
+	background-color: #B4B4B4;
+	box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+#capture.dark .camera {
+	background-image: url(../images/camera_light.svg);
+}
+
+#capture.dark:hover span {
+	background-color: #CE36DB;
+}
+
+#stop.dark span {
+	background-color: #FF6161;
+	box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#play.dark {
+	background-image: url(../images/forward_light.svg);
+}
+
+.bars.dark.active {
+	background-color: #EE3EFE;
+}
+
+
+/*-----------------MIS GUIFOS-----------------*/
+
+#noGifs.dark p {
+	color: #FFFFFF;
+}

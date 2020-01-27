@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<title>Gif.OS - Crea tus Guifos</title>
+
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+	<meta name="author" content="Carolina Jiménez"/>
+	<meta name="description" content="Guifos.com, crea tus propios gifs"/>
+
+	<link rel="shortcut icon" type="image/png" href="./images/gifOF_logo.png">
+
+	<link rel="stylesheet" type="text/css" href="./styles/styles_main.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/styles_theme1.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/styles_theme2.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/responsive.css"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet"/>
+
+</head>
+
+<body class="ref light" id="body">
+
+	<header>
+
+		<div class="topBar light ref slide" id="titleBar">
+			<p>¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.////// Número de visitas: 12.765.803</p>
+		</div>
+
+		<nav class="mainMargins">
+			
+			<button class="backBtn" id="backBtn"></button>
+
+			<div class="logo light ref" id="logo">
+				<img src="./images/gifOF_logo.png" id="imgLogo" 
+				alt="Gif.OS"/>
+			</div>
+
+		</nav>
+
+
+	</header>
+
+	<main>
+
+		<section class="record" id="record">
+
+			<div class="instructions box ref light" id="instrc">
+
+				<div class="topBar ref light" id="titleBar3">
+					<p>Crear Guifos</p>
+				</div>
+
+				<div class="text">
+
+					<img src="./images/window_img.png" alt="window">
+
+					<h4>Aquí podrás crear tus propios guifos</h4>
+
+					<p>Crear tu <span>guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+
+					<ol>
+						<li><span>1)</span> Dar permisos de acceso a la cámara (solo por el tiempo de uso)</li>
+						<li><span>2)</span> Capturar tu momento guifo</li>
+						<li><span>3)</span> Revisar el momento</li>
+						<li><span>4)</span> Listo para subir y compartir!</li>
+					</ol>
+
+					<p>¿Quieres comenzar a crear tu <span>guifo</span> ahora?</p>
+
+				</div>
+
+				<div class="btnContainer">
+
+					<button class="navButtons ref light secondary" id="cancel">Cancelar</button>
+
+					<button class="navButtons ref light" id="startBtn">Comenzar</button>
+
+				</div>
+
+			</div>
+
+			<div class="box ref light" id="videoBox">
+
+				<div class="topBar ref light" id="titleBar4">
+					<p>Un chequeo antes de empezar</p>
+				</div>
+
+				<div class="videoBorder">
+
+					<video id="video" class="background"></video>
+
+					<img id="gifs" class="background" src="./images/black.png" alt="black">
+
+				</div>
+
+				<div class="controls" id="controls">
+
+					<div class="timerBox" id="timerBox">
+						<p id="timer">00:00:00</p>
+					</div>
+
+					<div id="playBox" class="ref light"></div>
+
+				</div>
+
+			</div>
+
+
+			<div class="box ref light" id="uploadingCard">
+
+				<div class="topBar ref light" id="titleBar5">
+					<p>Subiendo Guifo</p>
+				</div>
+
+				<div id="loadingBox" class="background">
+
+					<img src="./images/globe_img.png" alt="globe">
+
+					<h2>Estamos subiendo tu guifo...</h2>
+
+					<div id="barBox"></div>
+
+					<p>Tiempo restante <span>38 años</span> algunos minutos</p>
+
+				</div>
+
+				<div class="controls" id="controls2"></div>
+
+			</div>
+
+			<div class="box ref light" id="uploaded">
+
+				<div class="topBar ref light" id="titleBar6">
+					<p>Guifo Subido con Éxito</p>
+				</div>
+
+				<div class="row">
+
+					<div class="gif">
+						<img id="gifThumb" src="./images/black.png" alt="gif">
+					</div>
+
+					<div class="cardText" id="textCard">
+
+						<h5>Guifo creado con éxito</h5>
+
+						<input type="text" name="url" id="guifoUrl" readonly="readonly">
+
+						<div id="doneC"></div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="misGuifos" class="mainMargins">
+
+			<div class="sectionTitle light ref">
+				<h5>Mis guifos</h5>
+			</div>
+
+			<div id="noGifs" class="ref light">
+				<p>Aquí aparecerán tus guifos</p>
+			</div>
+
+			<div id="guifosDisplay" class="searchResults"></div>
+
+		</section>
+
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+
+	<script src="./functions/upload_functions.js"></script>
+	
+</body>
+
+</html>

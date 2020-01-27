@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Gif.OS - Home</title>
+
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+	<meta name="author" content="Carolina Jiménez"/>
+	<meta name="description" content="Guifos.com, donde los gifs están"/>
+
+	<link rel="shortcut icon" type="image/png" href="./images/gifOF_logo.png">
+
+	<link rel="stylesheet" type="text/css" href="./styles/styles_main.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/styles_theme1.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/styles_theme2.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/responsive.css"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet"/>
+
+</head>
+
+<body class="light ref" id="body">
+
+	<header>
+
+		<div class="topBar light ref slide" id="titleBar">
+			<p>¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.////// Número de visitas: 12.765.803</p>
+		</div>
+		
+		<nav class="mainMargins menu">
+
+			<div class="logo light ref menu" id="logo">
+				<img src="./images/gifOF_logo.png" id="imgLogo" alt="Gif.OS"/>
+			</div>
+
+			<div class="buttonsContainer">
+
+				<button class="navButtons light ref" id="button1">Crear Guifos</button>
+
+				<div id="container1" class="theme">
+
+					<button id="button2" class="dropdownContainer light theme ref">
+						<span class="navButtons light theme ref" id="button2a">Elegir tema</span>
+						<span class="navButtons light arrow theme ref" id="button2b"></span>
+					</button>
+
+					<div class="dropdown light theme ref" id="dropdownBox">
+
+						<button id="themeToggle1" class="light theme ref"><span class="theme">S</span>ailor Day</button>
+
+						<button id="themeToggle2" class="light theme ref"><span class="theme">S</span>ailor Night</button>
+
+					</div>
+
+				</div>
+
+				<div class="navLink light ref">
+					<a href="./mis_guifos.html"><span>M</span>is Guifos</a>
+				</div>
+
+			</div>
+
+		</nav>
+
+	</header>
+
+	<main class="mainMargins">
+
+		<section id="gifSearch">
+
+			<div class="searchContainer light ref">
+
+				<div class="topBar light ref" id="titleBar2">
+					<p>Buscar</p>
+				</div>
+
+				<form action="./index.html" class="form" id="searchForm" autocomplete="off">
+
+					<div class="searchBarDiv">
+						<input class="searchBar light ref" type="text" name="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" id="searchBar" required="required">
+					</div>
+
+					<div>
+						<button class="searchButton light ref" type="button" id="searchButton" disabled="disabled"><i class="magGlass light ref"></i>Buscar</button>
+					</div>
+
+				</form>
+
+			</div>
+
+			<div id="suggestions" class="ref light">
+
+				<button type="button" class="searchesHist ref light" id="sug1" tabindex="-1"></button>
+
+				<button type="button" class="searchesHist ref light" id="sug2" tabindex="-1"></button>
+
+				<button type="button" class="searchesHist ref light" id="sug3" tabindex="-1"></button>
+
+			</div>
+
+			<div id="related"></div>
+
+			<div id="searchedTerm">
+				<div class="sectionTitle light ref resultsTitle">
+					<h5></h5>
+				</div>
+			</div>
+
+			<div class="searchResults" id="searchResults"></div>
+
+		</section>
+
+		<section id="recommended">
+
+			<div class="sectionTitle light ref">
+				<h5>Hoy te sugerimos:</h5>
+			</div>
+
+			<div id="recommendedContainer"></div>
+
+		</section>
+
+		<section id="trending">
+
+			<div class="sectionTitle light ref">
+				<h5>Tendencias:</h5>
+			</div>
+
+			<div id="trendingContainer" class="searchResults"></div>
+
+		</section>
+
+	</main>
+
+	<script src="./functions/index_functions.js"></script>
+
+</body>
+
+</html>

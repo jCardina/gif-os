@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<title>Gif.OS - Mis Guifos</title>
+
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+	<meta name="author" content="Carolina Jiménez"/>
+	<meta name="description" content="Guifos.com, encuentra todos tus guifos"/>
+
+	<link rel="shortcut icon" type="image/png" href="./images/gifOF_logo.png">
+
+	<link rel="stylesheet" type="text/css" href="./styles/styles_main.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/styles_theme1.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/styles_theme2.css"/>
+	<link rel="stylesheet" type="text/css" href="./styles/responsive.css"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet"/>
+
+</head>
+
+<body class="ref light" id="body">
+
+	<header>
+
+		<div class="topBar light ref slide" id="titleBar">
+			<p>¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.////// Número de visitas: 12.765.803</p>
+		</div>
+		
+		<nav class="mainMargins menu">
+
+			<button class="backBtn" id="backBtn"></button>
+
+			<div class="logo light ref menu" id="logo">
+				<img src="./images/gifOF_logo.png" id="imgLogo" alt="Gif.OS"/>
+			</div>
+
+			<div class="buttonsContainer">
+
+				<button class="navButtons light ref" id="button1">Crear Guifos</button>
+
+				<div id="container1" class="theme">
+
+					<button id="button2" class="dropdownContainer light theme ref">
+						<span class="navButtons light theme ref" id="button2a">Elegir tema</span>
+						<span class="navButtons light arrow theme ref" id="button2b"></span>
+					</button>
+
+					<div class="dropdown light theme ref" id="dropdownBox">
+
+						<button id="themeToggle1" class="light theme ref"><span class="theme">S</span>ailor Day</button>
+
+						<button id="themeToggle2" class="light theme ref"><span class="theme">S</span>ailor Night</button>
+
+					</div>
+
+				</div>
+
+				<div class="navLink light ref" id="guifosPage">
+					<a><span>M</span>is Guifos</a>
+				</div>
+
+			</div>
+
+		</nav>
+
+	</header>
+
+	<main>
+		
+		<section id="misGuifos" class="mainMargins">
+
+			<div class="sectionTitle light ref">
+				<h5>Mis guifos</h5>
+			</div>
+
+			<div id="noGifs" class="ref light">
+				<p>Aquí aparecerán tus guifos</p>
+			</div>
+
+			<div id="guifosDisplay" class="searchResults"></div>
+
+		</section>
+
+	</main>
+
+	<script src="./functions/mis_guifos_functions.js"></script>
+
+</body>
+
+</html>
