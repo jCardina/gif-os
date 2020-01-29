@@ -124,6 +124,8 @@ function getCopyLink(url, container) {
 	input.className = "originalSizeUrl";
 	input.readOnly = true;
 
+	var x = window.matchMedia("(max-width: 1030px) and (hover:none)");
+
 	container.appendChild(input);
 	input.value = url;
 
@@ -131,10 +133,19 @@ function getCopyLink(url, container) {
 	container.ondblclick = function() {
 		input.style.display = "block";
 		input.select();
-		//selection for mobile
-		input.setSelectionRange(0, 99999);
 		document.execCommand("copy");
 		input.style.display = "none";
+	}
+
+	if (x.matches) {
+		container.onclick = function() {
+			input.style.display = "block";
+			input.select();
+			//selection for mobile
+			input.setSelectionRange(0, 99999);
+			document.execCommand("copy");
+			input.style.display = "none";
+		}
 	}
 }
 
