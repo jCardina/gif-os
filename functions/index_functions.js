@@ -131,6 +131,8 @@ function getCopyLink(url, container) {
 	container.ondblclick = function() {
 		input.style.display = "block";
 		input.select();
+		//selection for mobile
+		input.setSelectionRange(0, 99999);
 		document.execCommand("copy");
 		input.style.display = "none";
 	}
