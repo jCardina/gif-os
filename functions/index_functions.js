@@ -403,12 +403,35 @@ async function search(event) {
 
 	let titleBar = document.querySelector(".resultsTitle");
 	let value = document.getElementById("searchBar").value;
+	let container = document.getElementById("searchResults");
 
 
 	let check = checkSearch(value, searchHistory);
 
+	var result = await getSearchResults(value);
+
+	if (result.data == 0) {
+		let noResults = document.createElement("div");
+		noResults.id = "noGifs";
+		noResults.classList.add("ref");
+
+		if (document.body.classList.contains("light")) {
+			noResults.classList.add("light");
+		} else {
+			noResults.classList.add("dark");
+		}
+
+		let text = document.createElement("p");
+		text.textContent = "No se encontraron gifs para: " + value;
+
+		noResults.appendChild(text);
+		container.appendChild(noResults);
+
+		return;
+	}
+
 	//Save searched term in local storage
-	if(check == invalidINDEX) {
+	if (check == invalidINDEX) {
 
 		let object = {name: value, searches: 1};
 		searchHistory.push(object);
@@ -431,10 +454,6 @@ async function search(event) {
 
 	searched = true;
 
-	var result = await getSearchResults(value);
-
-
-	let container = document.getElementById("searchResults");
 
 	titleBar.style.display = "block";
 	titleBar.parentNode.style.display = "block";

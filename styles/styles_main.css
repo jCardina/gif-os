@@ -293,6 +293,10 @@ nav {
 	align-items: flex-start;
 }
 
+.searchResults #noGifs {
+	padding-top: 0px;
+}
+
 .searchResults .gifContainer {
 	width: auto;
 	flex: auto;
