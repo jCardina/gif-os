@@ -405,7 +405,6 @@ async function search(event) {
 	let value = document.getElementById("searchBar").value;
 	let container = document.getElementById("searchResults");
 
-
 	let check = checkSearch(value, searchHistory);
 
 	var result = await getSearchResults(value);
