@@ -27,6 +27,52 @@ and (max-width: 1030px) {
 	}
 }
 
+@media only screen
+and (max-width: 1030px)
+and (hover: none) {
+
+	.navButtons:hover, .searchButton:enabled:hover, .more:hover, #related button:hover, button.navButtons.secondary:hover, #button2:hover span, .recContainer img:hover {
+		outline: 1px dotted transparent;
+
+	}
+
+	.navButtons.light:hover, .searchButton.light:enabled:hover, #button2.light:hover span {
+		background-color: #F7C9F3;
+
+	}
+
+	.navButtons.dark:hover, .searchButton.dark:enabled:hover, #button2.dark:hover span {
+		background-color: #EE3EFE;
+
+	}
+
+	.recContainer.light .more:hover, .relatedBtn.light:hover {
+		background-color: #4180F6;
+	}
+
+	.recContainer.dark .more:hover, .relatedBtn.dark:hover {
+		background-color: #2E32FB;
+	}
+
+	.navLink.dark:hover, .navLink.light:hover {
+		border-color: transparent;
+	}
+
+	.navButtons.secondary.light:hover {
+		background-color: #FFF4FD;
+	}
+
+	.gifContainer.light:hover img, .gifContainer.dark:hover img {
+		background-color: transparent;
+		box-shadow: none;
+		outline: 1px dotted transparent;
+	}
+
+	.gifContainer:active {
+		height: 200px;
+	}
+}
+
 
 @media only screen
 and (max-width: 900px) {
