@@ -237,6 +237,8 @@ function displayGif(container, url, option) {
 	input.className = "originalSizeUrl";
 	input.readOnly = true;
 
+	var x = window.matchMedia("(max-width: 1030px) and (hover:none)");
+
 	gifBox.appendChild(input);
 	input.value = url;
 
@@ -245,6 +247,17 @@ function displayGif(container, url, option) {
 		input.select();
 		document.execCommand("copy");
 		input.style.display = "none";
+	}
+
+	if (x.matches) {
+		resultImg.onclick = function() {
+			input.style.display = "block";
+			input.select();
+			//selection for mobile
+			input.setSelectionRange(0, 99999);
+			document.execCommand("copy");
+			input.style.display = "none";
+		}
 	}
 }
 
