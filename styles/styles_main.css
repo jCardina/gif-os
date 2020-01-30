@@ -164,6 +164,7 @@ nav {
 	border: 3px solid transparent;
 	background-clip: padding-box;
 	height: 26px;
+	line-height: 20px;
 }
 
 .form {
